@@ -14,15 +14,43 @@ export default function Home () {
 
                 <h3 className='pronunciation'>(ken - zee) <br/> <span className='italic'>noun, proper</span></h3>
                     
-                <p className='home-blurb'><span className='italic'>definition</span> <span className='bold'>1.</span> The last name of a developer who creates websites and apps with JS, React, CSS, and HTML. Also,  <span className='bold'>2.</span> a person who excels at problem-solving and learns at near lightspeed</p>
+                <p className='home-blurb'>
+                    <span className='italic'>
+                        definition
+                    </span>
+                    <span
+                        className='bold'>1.
+                    </span>
+                    The last name of a developer who creates websites and apps with JS, React, CSS, and HTML. Also,
+                    <span className='bold'>2.
+                    </span> a person who excels at problem-solving and learns at near lightspeed
+                </p>
 
                 <div className='buttons'>
                     <div className='row1'>
-                        <a className='button download-resume'href={CV}  download='SaraKuenziCV.pdf'>download my resume</a>
-                        <button className='button see-my-work' onClick={() => window.scrollTo({top: window.innerHeight > window.innerWidth ? window.innerHeight * 1.1 : window.innerHeight, left: 0, behavior: 'smooth'})}>see my work</button>
+                        <a 
+                            className='button download-resume' 
+                            href={CV} 
+                            target="_blank" 
+                            rel="noreferrer"
+                        >
+                            download my resume
+                        </a>
+                        <button 
+                            className='button see-my-work' 
+                            onClick={() => window.scrollTo({top: window.innerHeight > window.innerWidth ? window.innerHeight * 1.1 : window.innerHeight, left: 0, behavior: 'smooth'})}
+                        >
+                            see my work
+                        </button>
                     </div>
                     <div className='row2'>
-                        <a className='button download-certificate'href={scrimbaCert}  target="_blank" rel="noreferrer">Scrimba Frontend Developer Certificate</a>
+                        <a 
+                            className='button download-certificate' 
+                            href={scrimbaCert}  
+                            target="_blank" 
+                            rel="noreferrer">
+                            Scrimba Frontend Developer Certificate
+                        </a>
                     </div>
 
                 </div>
