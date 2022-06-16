@@ -9,8 +9,19 @@ let data = [
         moreInfo: `It's not deja vu, this is the site you are on right now! After finishing my bootcamp, I set out to make a developer portfolio. I chose to host on GitHub Pages and build it out with ReactJS. It was important to me to build the features of this site from scratch, so the only library I ended up using was ReactIcons. The most difficult part of building this site from scratch was the responsive styling. CSS has always been a challenge for me and it felt like every minor change led to a refactoring catastrophe on the design side. I used tutorials from my Scrimba course and John Smilga to build the slider and the auto-scroll features. Overall, I'm very pleased with the outcome of this site. There are certainly still bugs, but I'm looking forward to learning more and applying new knowledge to make this site perfect.`,
         sourceCode: `https://github.com/skuenzi/skuenzi.github.io`
     },
+
     {
         id: 2,
+        title: 'Comments Section',
+        img: '../Images/CardImages/commentsection.png',
+        description: 'An essential part of any website, this comments section is completely interactive. Users can manipulate the text of their own comments as well as vote on others. ',
+        techList: `React,CSS`,
+        deployedSite:'https://skuenzi.github.io/interactive-comment-section/',
+        moreInfo: `This was such a fun and frustrating project to work on. It made me realize how much more I have to learn, while also giving me confidence in my basic skills. I was able to figure out and write all the logic for this application, but not without a lot of research. But it feels good to know how to build something that is used so widely in the real world!`,
+        sourceCode: `https://github.com/skuenzi/interactice-comment-section`
+    },
+    {
+        id: 3,
         title: 'Advice Generator',
         img: '../Images/CardImages/advicegenerator.png',
         description: 'Feeling lost? Not sure how to proceed? Check out this advice generator and get a vague quote to confuse you even more.',
