@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.bcde5adb.css",
-    "main.js": "/static/js/main.da8b4aef.js",
-    "static/media/SaraKuenziCV.pdf": "/static/media/SaraKuenziCV.04d7c61276a81e45762b.pdf",
+    "main.js": "/static/js/main.1f4746b1.js",
+    "static/media/SaraKuenziCV.pdf": "/static/media/SaraKuenziCV.ea0b9cefbc426cb53ae3.pdf",
     "static/media/CERTIFICATE OF COMPLETION - The Frontend Developer Career Path.pdf": "/static/media/CERTIFICATE OF COMPLETION - The Frontend Developer Career Path.dd14f18590aa764c7683.pdf",
     "index.html": "/index.html",
     "main.bcde5adb.css.map": "/static/css/main.bcde5adb.css.map",
-    "main.da8b4aef.js.map": "/static/js/main.da8b4aef.js.map"
+    "main.1f4746b1.js.map": "/static/js/main.1f4746b1.js.map"
   },
   "entrypoints": [
     "static/css/main.bcde5adb.css",
-    "static/js/main.da8b4aef.js"
+    "static/js/main.1f4746b1.js"
   ]
 }
