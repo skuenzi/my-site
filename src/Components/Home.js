@@ -1,6 +1,7 @@
 
 import CV from '../SaraKuenziCV.pdf'
 import scrimbaCert from '../CERTIFICATE OF COMPLETION - The Frontend Developer Career Path.pdf'
+import promineoCert from '../PromineoCertificate.pdf'
 
 export default function Home () {
 
@@ -50,6 +51,15 @@ export default function Home () {
                             target="_blank" 
                             rel="noreferrer">
                             Scrimba Frontend Developer Certificate
+                        </a>
+                    </div>
+                    <div className='row2'>
+                        <a 
+                            className='button download-certificate' 
+                            href={promineoCert}  
+                            target="_blank" 
+                            rel="noreferrer">
+                            UNM Front-End Software Developement Bootcamp
                         </a>
                     </div>
 
