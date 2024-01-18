@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.bcde5adb.css",
-    "main.js": "/static/js/main.1f4746b1.js",
-    "static/media/SaraKuenziCV.pdf": "/static/media/SaraKuenziCV.ea0b9cefbc426cb53ae3.pdf",
+    "main.js": "/static/js/main.5f568893.js",
+    "static/media/SaraKuenziCV.pdf": "/static/media/SaraKuenziCV.b3eb38d3fc5484bd7b00.pdf",
+    "static/media/PromineoCertificate.pdf": "/static/media/PromineoCertificate.9c34175379053a39b429.pdf",
     "static/media/CERTIFICATE OF COMPLETION - The Frontend Developer Career Path.pdf": "/static/media/CERTIFICATE OF COMPLETION - The Frontend Developer Career Path.dd14f18590aa764c7683.pdf",
     "index.html": "/index.html",
     "main.bcde5adb.css.map": "/static/css/main.bcde5adb.css.map",
-    "main.1f4746b1.js.map": "/static/js/main.1f4746b1.js.map"
+    "main.5f568893.js.map": "/static/js/main.5f568893.js.map"
   },
   "entrypoints": [
     "static/css/main.bcde5adb.css",
-    "static/js/main.1f4746b1.js"
+    "static/js/main.5f568893.js"
   ]
 }
