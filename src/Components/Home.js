@@ -21,7 +21,7 @@ export default function Home () {
                     <span
                         className='bold'>1.
                     </span>
-                    The last name of a developer who creates websites and apps with JS, React, CSS, and HTML. Also,
+                    The last name of a developer who creates websites and apps with JS, TS, React, CSS, and HTML. Also,
                     <span className='bold'>2.
                     </span> a person who excels at problem-solving and learns at near lightspeed
                 </p>
