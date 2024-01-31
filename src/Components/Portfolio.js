@@ -17,14 +17,6 @@ export default function Portfolio () {
         }
     }, [index, projects])
 
-    // useEffect(() => {
-    //     let slider = setInterval(() => {
-    //         setIndex(index + 1)
-    //     }, 5000)
-
-    //     return () => clearInterval(slider)
-    // }, [index])
-
 
    const gallery = projects.map((project, projectIndex) => {
         let position= 'nextSlide'

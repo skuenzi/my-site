@@ -9,9 +9,18 @@ let data = [
         moreInfo: `It's not deja vu, this is the site you are on right now! After finishing my bootcamp, I set out to make a developer portfolio. I chose to host on GitHub Pages and build it out with ReactJS. It was important to me to build the features of this site from scratch, so the only library I ended up using was ReactIcons. The most difficult part of building this site from scratch was the responsive styling. CSS has always been a challenge for me and it felt like every minor change led to a refactoring catastrophe on the design side. I used tutorials from my Scrimba course and John Smilga to build the slider and the auto-scroll features. Overall, I'm very pleased with the outcome of this site. There are certainly still bugs, but I'm looking forward to learning more and applying new knowledge to make this site perfect.`,
         sourceCode: `https://github.com/skuenzi/skuenzi.github.io`
     },
-
     {
         id: 2,
+        title: 'Library',
+        img: '../Images/CardImages/library-landing-page.png',
+        description: 'An essential part of any website, this comments section is completely interactive. Users can manipulate the text of their own comments as well as vote on others. ',
+        techList: `Typescript, React, Semantic-UI, react-router, Google Books API, Zustand`,
+        deployedSite:'https://skuenzi.github.io/library/',
+        moreInfo: `This app started as my final project for the Promineo Frontend Bootcamp, but I continued working with it because it was just fascinating to work with the Google Books API. Navigating the docs for the API was particularly challenging, but I was able to understand enough to build out what I needed. I realized that using a CSS framework (Semantic-UI) takes a lot of the frustration out of hand-rolling design, but only if you work specifically within the specifics of the framework - which required a few workarounds in my .tsx files. Overall, this is a great project to work on and I'm excited to add more features!`,
+        sourceCode: `https://github.com/skuenzi/library`
+    },
+    {
+        id: 3,
         title: 'Comments Section',
         img: '../Images/CardImages/commentsection.png',
         description: 'An essential part of any website, this comments section is completely interactive. Users can manipulate the text of their own comments as well as vote on others. ',
@@ -21,7 +30,7 @@ let data = [
         sourceCode: `https://github.com/skuenzi/interactice-comment-section`
     },
     {
-        id: 3,
+        id: 4,
         title: 'Advice Generator',
         img: '../Images/CardImages/advicegenerator.png',
         description: 'Feeling lost? Not sure how to proceed? Check out this advice generator and get a vague quote to confuse you even more.',
@@ -31,7 +40,7 @@ let data = [
         sourceCode: `https://github.com/skuenzi/advice-generator`
     },
     {
-        id: 4,
+        id: 5,
         title: 'Digital Business Card',
         img: '../Images/CardImages/digitalbusinesscard.png',
         description: 'This eye-catching digital business card was built with React. It is fully customizable and a great way to get your name into the digital folders of movers and shakers.',
@@ -41,7 +50,7 @@ let data = [
         sourceCode: `https://github.com/skuenzi/digital-business-card`
     },
     {
-        id: 5,
+        id: 6,
         title: 'Tip Calculator',
         img: '../Images/CardImages/tip-calculator-desktop.png',
         description: `Math isn't my favorite thing, especially after a big meal and some drinks with friends. This convenient and simple tip calculator eliminates the mental gymnastics of how much to tip, who owes what, and what even is 20%?`,

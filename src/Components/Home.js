@@ -1,5 +1,5 @@
 
-import CV from '../SaraKuenziCV.pdf'
+import resume from '../SaraKuenziResume.pdf'
 import scrimbaCert from '../CERTIFICATE OF COMPLETION - The Frontend Developer Career Path.pdf'
 import promineoCert from '../PromineoCertificate.pdf'
 
@@ -31,7 +31,7 @@ export default function Home () {
                     <div className='row1'>
                         <a 
                             className='button download-resume' 
-                            href={CV} 
+                            href={resume} 
                             target="_blank" 
                             rel="noreferrer"
                         >
