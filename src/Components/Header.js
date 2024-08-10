@@ -1,10 +1,34 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import Contact from "./Contact";
 
 export default function Header() {
   const [hidden, setHidden] = useState(true);
   const [hiddenContact, setHiddenContact] = useState(true);
+
+  const onOutsideClick = (e) => {
+    console.log(e.target.parentElement);
+    if (
+      e.target.parentElement.className.includes("contact-links") ||
+      e.target.className.includes("contact-links") ||
+      e.target.parentElement.className.includes("page-link") ||
+      e.target.className.includes("page-link")
+    ) {
+      return;
+    } else {
+      setHidden(true);
+      setHiddenContact(true);
+    }
+  };
+
+  useEffect(() => {
+    if (!hiddenContact || !hidden) {
+      document.body.addEventListener("click", onOutsideClick, true);
+    }
+    if (hidden && window.innerWidth < "600px") {
+      setHiddenContact(true);
+    }
+  }, [hidden, hiddenContact]);
 
   function goTo(e) {
     if (!hiddenContact) {
