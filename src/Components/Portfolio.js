@@ -6,9 +6,15 @@ import ProjectModal from "./ProjectModal";
 
 export default function Portfolio() {
   const [index, setIndex] = useState(0);
-  const [activeProject, setActiveProject] = useState(projects[0]);
   const [showProjectPage, setShowProjectPage] = useState(false);
 
+  useEffect(() => {
+    if (showProjectPage) {
+      document.body.addEventListener("click", onOutsideClick, true);
+    }
+  }, [showProjectPage]);
+
+  // Event handlers
   const onOutsideClick = (e) => {
     if (
       e.target.parentElement.className.includes("project-page") ||
@@ -19,26 +25,19 @@ export default function Portfolio() {
       setShowProjectPage(false);
     }
   };
-
-  useEffect(() => {
+  const handleSlideChange = (dir) => {
     if (showProjectPage) {
-      document.body.addEventListener("click", onOutsideClick, true);
+      setShowProjectPage(false);
     }
-  }, [showProjectPage]);
 
-  useEffect(() => {
     const lastIndex = projects.length - 1;
-    if (index < 0) {
-      setIndex(lastIndex);
+    let currIndex = dir === "next" ? index + 1 : index - 1;
+    if (currIndex < 0) {
+      currIndex = lastIndex;
+    } else if (currIndex > lastIndex) {
+      currIndex = 0;
     }
-    if (index > lastIndex) {
-      setIndex(0);
-    }
-  }, [index]);
-
-  const handlePreviewClick = (id) => {
-    setActiveProject(projects[id - 1]);
-    setShowProjectPage(true);
+    setIndex(currIndex);
   };
 
   const gallery = projects.map((project, projectIndex) => {
@@ -54,9 +53,8 @@ export default function Portfolio() {
     return (
       <PreviewCard
         key={project.id}
-        id={project.id}
         className={position}
-        handlePreviewClick={handlePreviewClick}
+        setShowProjectPage={setShowProjectPage}
         {...project}
       />
     );
@@ -67,7 +65,7 @@ export default function Portfolio() {
       <ProjectModal
         showProjectPage={showProjectPage}
         setShowProjectPage={setShowProjectPage}
-        {...activeProject}
+        {...projects[index]}
       />
       <h2 className="section-title">projects</h2>
 
@@ -76,23 +74,13 @@ export default function Portfolio() {
 
         <button
           className="prev-button"
-          onClick={() => {
-            if (showProjectPage) {
-              setShowProjectPage(false);
-            }
-            setIndex((prevIndex) => prevIndex - 1);
-          }}
+          onClick={() => handleSlideChange("prev")}
         >
           <FiChevronLeft />
         </button>
         <button
           className="next-button"
-          onClick={() => {
-            if (showProjectPage) {
-              setShowProjectPage(false);
-            }
-            setIndex((prevIndex) => prevIndex + 1);
-          }}
+          onClick={() => handleSlideChange("next")}
         >
           <FiChevronRight />
         </button>

@@ -1,12 +1,12 @@
 import React from "react";
 
 export default function PreviewCard(props) {
-  const { id, className, handlePreviewClick, title, img, description } = props;
+  const { className, setShowProjectPage, title, img, description } = props;
 
   return (
     <div
       className={`preview-card ${className}`}
-      onClick={() => handlePreviewClick(id)}
+      onClick={() => setShowProjectPage(true)}
     >
       <img src={img} alt={title} className="preview-card-img" />
       <h4 className="preview-card-title">{title}</h4>
