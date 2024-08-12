@@ -13,6 +13,9 @@ body {
   background-repeat: no-repeat;
   overflow-x: hidden;
 }
+svg {
+  pointer-events: none;
+}
 
 :root {
   --dark-green: #132529;
@@ -580,14 +583,11 @@ body {
   cursor: pointer;
   align-self: end;
   justify-self: start;
-}
-
-.close-icon {
   font-size: 20px;
   color: var(--gray);
 }
 
-.close-icon:hover {
+.close-icon-button:hover {
   color: var(--brick);
 }
 

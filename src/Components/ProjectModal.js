@@ -13,12 +13,16 @@ export default function ProjectModal(props) {
     sourceCode,
   } = props;
   return (
-    <div className={`project-page ${showProjectPage ? "show" : "hidden"}`}>
-      <button className="close-icon-button">
-        <FaRegWindowClose
-          className="close-icon"
-          onClick={(e) => setShowProjectPage(false)}
-        />
+    <div
+      className={`project-page ${
+        showProjectPage ? "show" : "hidden"
+      } ignore-outside-click`}
+    >
+      <button
+        className="close-icon-button ignore-outside-click"
+        onClick={(e) => setShowProjectPage(false)}
+      >
+        <FaRegWindowClose className="close-icon" />
       </button>
       <img src={img} alt="portfolio" className="project-page-img" />
       <h3 className="project-page-title">{title}</h3>

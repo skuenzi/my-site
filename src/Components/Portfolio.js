@@ -12,19 +12,22 @@ export default function Portfolio() {
     if (showProjectPage) {
       document.body.addEventListener("click", onOutsideClick, true);
     }
+    return () => {
+      document.body.removeEventListener("click", onOutsideClick, true);
+    };
   }, [showProjectPage]);
 
-  // Event handlers
   const onOutsideClick = (e) => {
     if (
-      e.target.parentElement.className.includes("project-page") ||
-      e.target.className.includes("project-page")
+      e.target.parentElement.className.includes("ignore-outside-click") ||
+      e.target.className.includes("ignore-outside-click")
     ) {
       return;
     } else {
       setShowProjectPage(false);
     }
   };
+
   const handleSlideChange = (dir) => {
     if (showProjectPage) {
       setShowProjectPage(false);
@@ -40,7 +43,7 @@ export default function Portfolio() {
     setIndex(currIndex);
   };
 
-  const gallery = projects.map((project, projectIndex) => {
+  const carouselSlides = projects.map((project, projectIndex) => {
     let position = "nextSlide";
 
     if (projectIndex === index) {
@@ -69,17 +72,17 @@ export default function Portfolio() {
       />
       <h2 className="section-title">projects</h2>
 
-      <div className="container">
-        {gallery}
+      <div className="container carousel">
+        {carouselSlides}
 
         <button
-          className="prev-button"
+          className="prev-button ignore-outside-click"
           onClick={() => handleSlideChange("prev")}
         >
           <FiChevronLeft />
         </button>
         <button
-          className="next-button"
+          className="next-button ignore-outside-click"
           onClick={() => handleSlideChange("next")}
         >
           <FiChevronRight />
